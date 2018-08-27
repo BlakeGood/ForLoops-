@@ -56,7 +56,9 @@ public class ForLoops
 		{
 			for (int i = 5; i < 101; i = i + 5 )
 				{
-					System.out.println(i);
+					int sum = 0;
+					sum = sum + i;
+					System.out.println(sum);
 				}
 		}
 
