@@ -4,10 +4,14 @@ public class ForLoops
 
 		public static void main(String[] args)
 			{
-				challengeOne();
-				challengeTwo();
-				challengeThree();
-				challengeFour();
+//				challengeOne();
+//				challengeTwo();
+//				challengeThree();
+//				challengeFour();
+				challengeFive();
+//				challengeSix();
+//				challengeSeven();
+//				challengeEight();
 
 			}
 
@@ -47,5 +51,13 @@ public class ForLoops
 							}
 					}
 			}
+		
+		public static void challengeFive()
+		{
+			for (int i = 5; i < 101; i = i + 5 )
+				{
+					System.out.println(i);
+				}
+		}
 
 	}
