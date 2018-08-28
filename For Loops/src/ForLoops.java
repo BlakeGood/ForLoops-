@@ -1,17 +1,17 @@
-
+import java.util.Scanner;
 public class ForLoops
 	{
 
 		public static void main(String[] args)
 			{
-//				challengeOne();
-//				challengeTwo();
-//				challengeThree();
-//				challengeFour();
-				challengeFive();
-//				challengeSix();
-//				challengeSeven();
-//				challengeEight();
+		// challengeOne();
+		// challengeTwo();
+		// challengeThree();
+		// challengeFour();
+		// challengeFive();
+		 challengeSix();
+		// challengeSeven();
+		// challengeEight();
 
 			}
 
@@ -56,10 +56,47 @@ public class ForLoops
 		{
 			for (int i = 5; i < 101; i = i + 5 )
 				{
-					int sum = 0;
+					int sum = i + i;
 					sum = sum + i;
 					System.out.println(sum);
 				}
+		}
+		
+		public static void challengeSix()
+		{
+			Scanner upperbound = new Scanner(System.in);
+			Scanner lowerbound = new Scanner(System.in);
+			
+			System.out.println("Please give an upperbound.");
+			int upper = upperbound.nextInt();
+			
+			System.out.println("Please give a lowerbound.");
+			int lower = lowerbound.nextInt();
+			for (int i = 0; i > lower && i < upper; i++)
+			{
+			int sum = i + i;
+			sum = sum + i;
+			System.out.println(sum);
+			}
+			
+			
+		}
+		
+		public static void challengeSeven()
+		{
+		
+			
+			
+		}
+		
+		public static void challengeEight()
+		{
+			System.out.println("*********");
+			for (int i = 0; i < 7; i++)
+			{
+			System.out.println("*       *");
+			}
+			System.out.println("*********");
 		}
 
 	}
