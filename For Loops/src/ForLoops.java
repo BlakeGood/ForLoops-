@@ -1,18 +1,18 @@
 import java.util.Scanner;
+
 public class ForLoops
 	{
 
 		public static void main(String[] args)
 			{
-		// challengeOne();
-		// challengeTwo();
-		// challengeThree();
-		// challengeFour();
-		// challengeFive();
-		 challengeSix();
-		// challengeSeven();
-		// challengeEight();
-		 // this is to commit the file 
+				// challengeOne();
+				// challengeTwo();
+				// challengeThree();
+				// challengeFour();
+				// challengeFive();
+				// challengeSix();
+				 challengeSeven();
+				// challengeEight();
 
 			}
 
@@ -52,52 +52,68 @@ public class ForLoops
 							}
 					}
 			}
-		
+
 		public static void challengeFive()
-		{
-			for (int i = 5; i < 101; i = i + 5 )
-				{
-					int sum = i + i;
-					sum = sum + i;
-					System.out.println(sum);
-				}
-		}
-		
+			{
+				int sum = 0;
+				
+				for (int i = 5; i<=100; i = i + 5)
+					{
+						sum = sum + i;
+					}
+				System.out.println("The sum is " + sum);
+			}
+
 		public static void challengeSix()
-		{
-			Scanner upperbound = new Scanner(System.in);
-			Scanner lowerbound = new Scanner(System.in);
-			
-			System.out.println("Please give an upperbound.");
-			int upper = upperbound.nextInt();
-			
-			System.out.println("Please give a lowerbound.");
-			int lower = lowerbound.nextInt();
-			for (int i = 0; i > lower && i < upper; i++)
 			{
-			int sum = i + i;
-			sum = sum + i;
-			System.out.println(sum);
+				Scanner upperbound = new Scanner(System.in);
+				Scanner lowerbound = new Scanner(System.in);
+
+				System.out.println("Please give an upperbound.");
+				int upper = upperbound.nextInt();
+
+				System.out.println("Please give a lowerbound.");
+				int lower = lowerbound.nextInt();
+				int sum = 0;
+
+				for (int run = 0; run <= upper; run = run + 1)
+					{
+						sum = sum + run;
+					}
+				System.out.println("The sum is " + sum);
+
 			}
-			
-			
-		}
-		
+
 		public static void challengeSeven()
-		{
-		
-			
-			
-		}
-		
-		public static void challengeEight()
-		{
-			System.out.println("*********");
-			for (int i = 0; i < 7; i++)
 			{
-			System.out.println("*       *");
+				Scanner upperbound = new Scanner(System.in);
+				Scanner lowerbound = new Scanner(System.in);
+
+				System.out.println("Please give an upperbound.");
+				int upper = upperbound.nextInt();
+
+				System.out.println("Please give a lowerbound.");
+				int lower = lowerbound.nextInt();
+				int sum = 0;
+
+				for (int run = 0; run <= upper && run % 3 == 0; run = run + 1)
+					{
+						sum = sum + run;
+					}
+				System.out.println("The sum is " + sum);
+
+				
+				
 			}
-			System.out.println("*********");
-		}
+
+		public static void challengeEight()
+			{
+				System.out.println("*********");
+				for (int i = 0; i < 7; i++)
+					{
+						System.out.println("*       *");
+					}
+				System.out.println("*********");
+			}
 
 	}
